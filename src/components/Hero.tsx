@@ -21,7 +21,7 @@ const Hero = () => {
           alt="Gestão financeira profissional" 
           className="w-full h-full object-cover"
         />
-        <div className="absolute inset-0 bg-gradient-to-br from-primary/90 to-primary/70"></div>
+        <div className="absolute inset-0 bg-gradient-to-br from-primary/60 to-primary/40"></div>
       </div>
       <div className="container mx-auto px-4 py-16 md:py-24 relative z-10">
         <div className="max-w-4xl mx-auto text-center space-y-8">
