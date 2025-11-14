@@ -1,6 +1,7 @@
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import About from "@/components/About";
+import Team from "@/components/Team";
 import Services from "@/components/Services";
 import Contact from "@/components/Contact";
 import WhatsAppButton from "@/components/WhatsAppButton";
@@ -10,10 +11,11 @@ const Index = () => {
     <div className="min-h-screen bg-background">
       <Header />
       <main>
-        <Hero />
-        <About />
-        <Services />
-        <Contact />
+      <Hero />
+      <About />
+      <Team />
+      <Services />
+      <Contact />
       </main>
       <WhatsAppButton />
     </div>
