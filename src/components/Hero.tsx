@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
+import heroBackground from "@/assets/hero-background.jpg";
 const Hero = () => {
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
@@ -13,8 +14,16 @@ const Hero = () => {
       });
     }
   };
-  return <section id="hero" className="min-h-screen flex items-center justify-center bg-gradient-to-br from-primary to-primary/80 text-primary-foreground pt-20">
-      <div className="container mx-auto px-4 py-16 md:py-24">
+  return <section id="hero" className="min-h-screen flex items-center justify-center relative text-primary-foreground pt-20 overflow-hidden">
+      <div className="absolute inset-0 z-0">
+        <img 
+          src={heroBackground} 
+          alt="Gestão financeira profissional" 
+          className="w-full h-full object-cover"
+        />
+        <div className="absolute inset-0 bg-gradient-to-br from-primary/90 to-primary/70"></div>
+      </div>
+      <div className="container mx-auto px-4 py-16 md:py-24 relative z-10">
         <div className="max-w-4xl mx-auto text-center space-y-8">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
             TeG Gestão Financeira
