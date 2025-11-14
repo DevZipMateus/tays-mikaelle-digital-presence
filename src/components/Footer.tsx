@@ -1,6 +1,5 @@
 import { Mail, Phone, MapPin, Clock, Instagram } from "lucide-react";
 import logo from "@/assets/logo.png";
-
 const Footer = () => {
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
@@ -14,14 +13,12 @@ const Footer = () => {
       });
     }
   };
-
-  return (
-    <footer className="bg-card border-t border-border">
+  return <footer className="bg-card border-t border-border">
       <div className="container mx-auto px-4 py-12">
         <div className="grid md:grid-cols-4 gap-8">
           {/* Logo e descrição */}
           <div className="md:col-span-1">
-            <img src={logo} alt="TeG Gestão Financeira" className="h-12 mb-4" />
+            <img src={logo} alt="TeG Gestão Financeira" className="h-48 mb-4" />
             <p className="text-sm text-muted-foreground">
               Transforme dados financeiros em crescimento seguro, organizado e sustentável
             </p>
@@ -32,42 +29,27 @@ const Footer = () => {
             <h3 className="font-semibold text-foreground mb-4">Navegação</h3>
             <ul className="space-y-2">
               <li>
-                <button
-                  onClick={() => scrollToSection("hero")}
-                  className="text-sm text-muted-foreground hover:text-primary transition-colors"
-                >
+                <button onClick={() => scrollToSection("hero")} className="text-sm text-muted-foreground hover:text-primary transition-colors">
                   Início
                 </button>
               </li>
               <li>
-                <button
-                  onClick={() => scrollToSection("about")}
-                  className="text-sm text-muted-foreground hover:text-primary transition-colors"
-                >
+                <button onClick={() => scrollToSection("about")} className="text-sm text-muted-foreground hover:text-primary transition-colors">
                   Sobre
                 </button>
               </li>
               <li>
-                <button
-                  onClick={() => scrollToSection("team")}
-                  className="text-sm text-muted-foreground hover:text-primary transition-colors"
-                >
+                <button onClick={() => scrollToSection("team")} className="text-sm text-muted-foreground hover:text-primary transition-colors">
                   Equipe
                 </button>
               </li>
               <li>
-                <button
-                  onClick={() => scrollToSection("services")}
-                  className="text-sm text-muted-foreground hover:text-primary transition-colors"
-                >
+                <button onClick={() => scrollToSection("services")} className="text-sm text-muted-foreground hover:text-primary transition-colors">
                   Serviços
                 </button>
               </li>
               <li>
-                <button
-                  onClick={() => scrollToSection("contact")}
-                  className="text-sm text-muted-foreground hover:text-primary transition-colors"
-                >
+                <button onClick={() => scrollToSection("contact")} className="text-sm text-muted-foreground hover:text-primary transition-colors">
                   Contato
                 </button>
               </li>
@@ -79,21 +61,13 @@ const Footer = () => {
             <h3 className="font-semibold text-foreground mb-4">Contato</h3>
             <ul className="space-y-3">
               <li>
-                <a
-                  href="https://wa.me/5511976748621"
-                  className="flex items-start gap-2 text-sm text-muted-foreground hover:text-primary transition-colors"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
+                <a href="https://wa.me/5511976748621" className="flex items-start gap-2 text-sm text-muted-foreground hover:text-primary transition-colors" target="_blank" rel="noopener noreferrer">
                   <Phone className="h-4 w-4 mt-0.5 flex-shrink-0" />
                   <span>(11) 97674-8621</span>
                 </a>
               </li>
               <li>
-                <a
-                  href="mailto:financeiro@tegcont.com.br"
-                  className="flex items-start gap-2 text-sm text-muted-foreground hover:text-primary transition-colors"
-                >
+                <a href="mailto:financeiro@tegcont.com.br" className="flex items-start gap-2 text-sm text-muted-foreground hover:text-primary transition-colors">
                   <Mail className="h-4 w-4 mt-0.5 flex-shrink-0" />
                   <span>financeiro@tegcont.com.br</span>
                 </a>
@@ -116,12 +90,7 @@ const Footer = () => {
           {/* Redes sociais */}
           <div>
             <h3 className="font-semibold text-foreground mb-4">Redes sociais</h3>
-            <a
-              href="https://www.instagram.com/tegcont?igsh=cHhram1zdGVxc3dk"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 text-sm text-muted-foreground hover:text-primary transition-colors"
-            >
+            <a href="https://www.instagram.com/tegcont?igsh=cHhram1zdGVxc3dk" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 text-sm text-muted-foreground hover:text-primary transition-colors">
               <Instagram className="h-5 w-5" />
               <span>@tegcont</span>
             </a>
@@ -135,8 +104,6 @@ const Footer = () => {
           </p>
         </div>
       </div>
-    </footer>
-  );
+    </footer>;
 };
-
 export default Footer;
