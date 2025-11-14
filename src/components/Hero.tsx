@@ -21,10 +21,9 @@ const Hero = () => {
           alt="Gestão financeira profissional" 
           className="w-full h-full object-cover"
         />
-        <div className="absolute inset-0 bg-gradient-to-br from-primary/60 to-primary/40"></div>
       </div>
       <div className="container mx-auto px-4 py-16 md:py-24 relative z-10">
-        <div className="max-w-4xl mx-auto text-center space-y-8">
+        <div className="max-w-4xl mx-auto text-center space-y-8 bg-black/60 backdrop-blur-sm p-8 md:p-12 rounded-lg">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
             TeG Gestão Financeira
           </h1>
