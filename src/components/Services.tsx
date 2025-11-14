@@ -8,6 +8,8 @@ import {
   Wallet,
 } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
+import financialCharts from "@/assets/financial-charts.jpg";
+import financialAnalytics from "@/assets/financial-analytics.jpg";
 
 const Services = () => {
   const services = [
@@ -59,13 +61,30 @@ const Services = () => {
     <section id="services" className="py-20 md:py-28 bg-background">
       <div className="container mx-auto px-4">
         <div className="max-w-6xl mx-auto">
-          <div className="text-center mb-16">
+          <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
               Nossos serviços
             </h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
               Soluções completas para sua gestão financeira empresarial
             </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-6 mb-12 max-w-4xl mx-auto">
+            <div className="rounded-xl overflow-hidden shadow-lg">
+              <img 
+                src={financialCharts} 
+                alt="Gráficos e análises financeiras sobre mesa de trabalho"
+                className="w-full h-64 object-cover"
+              />
+            </div>
+            <div className="rounded-xl overflow-hidden shadow-lg">
+              <img 
+                src={financialAnalytics} 
+                alt="Dashboard de analytics financeiros em laptop"
+                className="w-full h-64 object-cover"
+              />
+            </div>
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
