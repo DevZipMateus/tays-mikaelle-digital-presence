@@ -1,5 +1,6 @@
 import { Target, Compass, Heart } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
+import financialGrowth from "@/assets/financial-growth.jpg";
 
 const About = () => {
   const values = [
@@ -27,13 +28,21 @@ const About = () => {
     <section id="about" className="py-20 md:py-28 bg-muted/30">
       <div className="container mx-auto px-4">
         <div className="max-w-6xl mx-auto">
-          <div className="text-center mb-16">
+          <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
               Quem somos
             </h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
               Especialistas em transformar a gestão financeira de PMEs em vantagem competitiva
             </p>
+          </div>
+
+          <div className="mb-12 rounded-xl overflow-hidden shadow-lg max-w-4xl mx-auto">
+            <img 
+              src={financialGrowth} 
+              alt="Crescimento financeiro representado por plantas crescendo sobre moedas"
+              className="w-full h-64 md:h-80 object-cover"
+            />
           </div>
 
           <div className="grid md:grid-cols-3 gap-8">
